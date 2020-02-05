@@ -31,7 +31,8 @@ from __future__ import print_function
 # section0, section1, section2, section3 = reports
 #######
 import random
-import os.path              
+import os.path
+import importlib       
     
 import example0, example1, example2, example3
 import example4, example5, example6, example7
@@ -45,7 +46,7 @@ modules = [example0, example1, example2, example3, example4, example5, example6,
 team0, team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, 
 team11, team12, team13, team14]
 for module in modules:
-    reload(module)
+    importlib.reload(module)
     print ('reloaded',module)
     for required_variable in ['team_name', 'strategy_name', 'strategy_description']:
         if not hasattr(module, required_variable):
@@ -111,7 +112,7 @@ def play_iterative_rounds(player1, player2):
     moves2 = ''
     score1 = 0
     score2 = 0
-    for round in range(number_of_rounds):
+    for play_round in range(number_of_rounds):
         score1, score2, moves1, moves2 = play_round(player1, player2, score1, score2, moves1, moves2)
     return (score1, score2, moves1, moves2)
     
