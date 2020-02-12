@@ -29,11 +29,11 @@ def move(my_history, their_history, my_score, their_score):
     chance[1,0]
     import random
     if their_history  ==  'b':
-        chance=chance+[1]
+        chance = chance+[1]
     if their_history == 'c':
-        chance=chance+[0]
-    random.choice(chance)=decision
-    if decision=1:
+        chance = chance+[0]
+    d = random.choice(chance)
+    if d = 1:
         return 'b'
     else:
         return 'c'
