@@ -32,7 +32,7 @@ def move(my_history, their_history, my_score, their_score):
         chance = chance+[1]
     if their_history == 'c':
         chance = chance+[0]
-    d = random.choice(chance)
+    d == random.choice(chance)
     if d = 1:
         return 'b'
     else:
