@@ -28,9 +28,13 @@ def move(my_history, their_history, my_score, their_score):
     
     import random
     a = rand.int(1,100)
-    if a < 50
+    if their_history[-1] = 'c':
+        a -= 5
+    else if their_history[-1] = 'b':
+        a += 5
+    if a < 50:
         return 'c'
-    else
+    else:
         return 'b'
 
     
