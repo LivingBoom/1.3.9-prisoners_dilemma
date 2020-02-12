@@ -31,7 +31,7 @@ from __future__ import print_function
 # section0, section1, section2, section3 = reports
 #######
 import random
-import os.path       
+import os.path              
     
 import example0, example1, example2, example3
 import example4, example5, example6, example7
@@ -378,5 +378,5 @@ def post_to_file(string, filename='tournament.txt', directory=''):
  
 ### Call main_play() if this file is executed
 if __name__ == '__main__':
-    scores, moves, reports = main_play(modules[0:20])   
+    scores, moves, reports = main_play(modules[0:4])   
     section0, section1, section2, section3 = reports
