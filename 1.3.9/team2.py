@@ -28,9 +28,9 @@ def move(my_history, their_history, my_score, their_score):
     
     chance=[1,0,1]
     import random
-    if "b" in their_history[-1]:
+    if their_history[-1] == [c]:
         chance = chance+[1]
-    if "b" in their_history[-1]:
+    if their_history[-1] == [b]:
         chance = chance+[0]
     'd' == random.choice(chance)
     if 'd'==1:
