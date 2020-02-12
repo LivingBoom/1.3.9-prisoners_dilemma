@@ -1,3 +1,4 @@
+from __future__ import print_function
 ####
 # Each team's file must define four tokens:
 #     team_name: a string
